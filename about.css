@@ -1,0 +1,111 @@
+/* About Page Specific Styles */
+.about {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #007BFF;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.about-content .section {
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.about-content .section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-content .section h3 {
+    font-size: 1.8em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.about-content .section p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-content .section h3,
+.about-content .section p {
+    margin-bottom: 20px;
+}
+
+/* Team Member Section */
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content .section {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .team-member h3 {
+        font-size: 1.3em;
+    }
+
+    .team-member p {
+        font-size: 0.9em;
+    }
+}
